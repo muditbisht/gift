@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Gift | Auth{%endblock%}
+{% block body %}
+<section class="bread-sec">
+	<div class="container">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li class="active">Login</li>
+		</ul>
+	</div>
+</section>
+<section class="login-isec">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12 register-or">
+				<div class="form-wrapper">
+					<h2><span>Create New Account</span></h2>
+					<p>Create your own Indianto Account</p>
+					<form action="{% url 'auth:register' %}" method="post">
+						{% csrf_token %}
+						<div id="register-form">
+							<div class="form-group">
+								<label>First Name</label>
+								<input name="first_name" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label>Last Name</label>
+								<input name="last_name" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input name="email" class="form-control" type="email">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input name="pwd" class="form-control" type="password">
+							</div>
+							<div class="form-group">
+								<button class="btn" type="submit">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<div class="form-wrapper">
+					<div id="customer-login" class="content">
+						<h2><span>Login</span></h2>
+						<p>Welcome back! Sign in to your account</p>
+						<form action="{% url 'auth:login' %}" method="post">
+							{% csrf_token %}
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input name="email" class="form-control" type="email">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input name="pwd" class="form-control" type="password">
+							</div>
+							<div class="control-wrapper last">
+								<div class="action">
+									<a class="forgot-pass" href="javascript:;" onclick="showRecoverPasswordForm()">Forgotten Password?</a>
+								</div>
+								<button class="btn" type="submit">Login</button>
+							</div>
+						</form>
+					</div>
+					<div id="recover-password" style="display: none;">
+						<h2><span>Reset Password</span></h2>
+						<p class="note">We will send you an email to reset your password.</p>
+						<form>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input class="form-control" type="email">
+							</div>
+							<div class="control-wrapper">
+								<button class="btn" type="submit">Reset Password</button>
+								<a class="cancel btn" href="javascript:;" onclick="hideRecoverPasswordForm();">Cancel</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

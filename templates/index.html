@@ -1,0 +1,415 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Gift{%endblock%}
+{% block body %}
+
+<section id="hslider" class="carousel slide" data-ride="carousel" data-interval="40000">
+	<ol class="carousel-indicators">
+		<li data-target="#hslider" data-slide-to="0" class="active"></li>
+		<li data-target="#hslider" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img class="img-responsive" src="{% static 'images/banner2.png' %}">
+		</div>
+		<div class="item">
+			<img class="img-responsive" src="{% static 'images/banner3.png' %}">
+		</div>
+	</div>
+	<a class="left carousel-control" href="#hslider" data-slide="prev">
+		<span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+	</a>
+	<a class="right carousel-control" href="#hslider" data-slide="next">
+		<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+	</a>
+</section>
+
+<section class="tpsection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading">
+					<h2>WE HAVE SOMETHING FOR EVERYONE</h2>
+				</div>
+				<div class="slider review-slider">
+					<div class="prblock">
+						<img class="img-responsive" src="{% static 'images/birthday/5.jpg' %}">
+						<h4><a href="#">Birthday Gifts</a></h4>
+					</div>
+					<div class="prblock">
+						<img class="img-responsive" src="{% static 'images/anniversery/5.jpg' %}">
+						<h4><a href="#">Anniversary Gifts</a></h4>
+					</div>
+					<div class="prblock">
+						<img class="img-responsive" src="{% static 'images/food/2.jpg' %}">
+						<h4><a href="#">Cakes</a></h4>
+					</div>
+					<div class="prblock">
+						<img class="img-responsive" src="{% static 'images/homedecor/3.jpg' %}">
+						<h4><a href="#">Flowers</a></h4>
+					</div>
+					<div class="prblock">
+						<img class="img-responsive" src="{% static 'images/valentine/14.jpg' %}">
+						<h4><a href="#">Valentine Gift</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="latest-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="heading2">
+					<h3>Birthday Gifts</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut commodo quis enim dapibus pharetra.</p>
+				</div>
+				<div class="slider review-slider2">
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/6.jpg' %}"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/1.jpg' %}"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/3.png' %}"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/8.jpg' %}"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+				</div>
+				<div class="slider review-slider3">
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/5.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/2.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/7.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/4.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/9.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="{% static 'images/birthday/1.jpg' %}"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="heading2">
+					<h3>Anniversary Gifts</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut commodo quis enim dapibus pharetra.</p>
+				</div>
+				<div class="slider review-slider2">
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/anniversery/4.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/anniversery/2.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/anniversery/3.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+									<a href="#"><img class="img-responsive" src="images/anniversery/5.jpg"></a>
+									<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+								</div>
+							</div>
+							<div class="slider review-slider3">
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/1.png"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/6.jpg"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/8.jpg"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/9.jpg"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/2.jpg"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+								<div class="prblock">
+									<a href="#"><img class="img-responsive" src="images/anniversery/1.png"></a>
+									<h4><a href="#">Product Name</a></h4>
+									<h5>M.R.P. ₹2,699.00</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+<section class="latest-sec bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading">
+					<h2>HOME DECOR</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut commodo quis enim dapibus pharetra.</p>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="slider review-slider2">
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/hdecor.jpg"></a>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/hdecor.jpg"></a>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/hdecor.jpg"></a>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/hdecor.jpg"></a>
+					</div>
+				</div>
+				<div class="slider review-slider4">
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/1.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/2.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/3.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/4.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/5.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/6.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/1.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/2.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/homedecor/3.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="latest-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="heading2">
+					<h3>Valentine Gift</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut commodo quis enim dapibus pharetra.</p>
+				</div>
+				<div class="slider review-slider2">
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/valentine/2.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/valentine/3.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/valentine/4.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/valentine/7.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+				</div>
+				<div class="slider review-slider3">
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/14.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/13.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/12.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/11.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/10.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/9.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="heading2">
+					<h3>Kids Gift</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut commodo quis enim dapibus pharetra.</p>
+				</div>
+				<div class="slider review-slider2">
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/11.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/10.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/9.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+					<div class="prblock2">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/4.jpg"></a>
+						<p><a href="#">Nunc ultricies gravida ligula, eu placerat diam Aliquam sed neque aliquet.</a></p>
+					</div>
+				</div>
+				<div class="slider review-slider3">
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/1.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/2.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/3.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/4.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/5.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/kidsgift/6.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="latest-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading2">
+					<h3>Best sellers</h3>
+				</div>
+				<div class="slider review-slider5">
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/2.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/valentine/14.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/birthday/1.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/birthday/5.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/anniversery/1.png"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+					<div class="prblock">
+						<a href="#"><img class="img-responsive" src="images/anniversery/5.jpg"></a>
+						<h4><a href="#">Product Name</a></h4>
+						<h5>M.R.P. ₹2,699.00</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%endblock%}
